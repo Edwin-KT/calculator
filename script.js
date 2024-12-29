@@ -15,7 +15,7 @@ function divide(firstNumber, secondNumber) {
 }
 
 function operate() {
-  switch (operate) {
+  switch (operator) {
     case "+":
       return add(firstOperand, secondOperand);
       break;
@@ -23,8 +23,8 @@ function operate() {
       return subtract(firstOperand, secondOperand);
       break;
     case "*":
-      break;
       return multiply(firstOperand, secondOperand);
+      break;
     case "/":
       return divide(firstOperand, secondOperand);
       break;
