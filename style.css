@@ -1,0 +1,26 @@
+.calculator-container {
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  border-color: black;
+  border-style: solid;
+  padding: 12px;
+  width: 25%;
+}
+
+.zero {
+  width: 50%;
+}
