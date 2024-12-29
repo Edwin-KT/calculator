@@ -13,3 +13,7 @@ function multiply(firstNumber, secondNumber) {
 function divide(firstNumber, secondNumber) {
   return firstNumber / secondNumber;
 }
+
+let firstOperand = null,
+  operator = null,
+  secondOperand = null;
