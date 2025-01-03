@@ -22,9 +22,13 @@
   justify-content: space-between;
 }
 
-button {
+button,
+.calculator-container {
   border-color: black;
   border-style: solid;
+}
+
+button {
   padding: 12px;
   width: 25%;
 }
