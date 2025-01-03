@@ -61,6 +61,18 @@ function addDecimal() {
   }
 }
 
+function backspace() {
+  if (currentValue.length > 1) {
+    currentValue = currentValue.slice(0, -1);
+  } else {
+    currentValue = "0";
+  }
+  if (!currentValue.includes(".")) {
+    decimal = false;
+  }
+  populateDisplay();
+}
+
 function updateCurrentValue(element) {
   if (currentValue === "0") currentValue = element.textContent;
   else if (currentValue.length < 9) currentValue += element.textContent;
@@ -129,4 +141,10 @@ operatorButtons.forEach((element) => {
     operator = element.textContent;
     calculatorDisplay.textContent = operator;
   });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Backspace") {
+    backspace();
+  }
 });
