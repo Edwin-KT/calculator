@@ -57,6 +57,7 @@ function addDecimal() {
   if (currentValue.length < 8 && decimal === false) {
     currentValue += ".";
     decimal = true;
+    populateDisplay();
   }
 }
 
@@ -69,6 +70,7 @@ function updateOperands() {
   if (operator != null) evaluate();
   firstOperand = currentValue;
   currentValue = "0";
+  decimal = false;
 }
 
 function resetValues() {
