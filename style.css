@@ -1,7 +1,15 @@
+:root {
+  --display-color: #9f9980;
+}
+
+* {
+  font-size: 1rem;
+}
+
 .calculator-container {
   display: flex;
   flex-direction: column;
-  width: 180px;
+  width: 240px;
 }
 
 .buttons-container {
@@ -23,4 +31,11 @@ button {
 
 .zero {
   width: 50%;
+}
+
+.display {
+  background-color: var(--display-color);
+  border: 12px solid black;
+  padding: 6px;
+  font-size: 2rem;
 }
