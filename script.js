@@ -1,5 +1,6 @@
 const calculatorDisplay = document.querySelector(".display");
 
+const oppositeButton = document.querySelector(".opposite-button");
 const decimalButton = document.querySelector(".decimal-button");
 const acButton = document.querySelector(".ac-button");
 const equalButton = document.querySelector(".equal-button");
@@ -92,6 +93,13 @@ let firstOperand = null,
   secondOperand = null,
   decimal = false,
   currentValue = "0";
+
+oppositeButton.addEventListener("click", () => {
+  let aux = parseFloat(currentValue);
+  aux = -aux;
+  currentValue = aux.toString();
+  populateDisplay();
+});
 
 decimalButton.addEventListener("click", () => {
   addDecimal();
