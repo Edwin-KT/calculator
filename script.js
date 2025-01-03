@@ -22,6 +22,10 @@ function divide(firstNumber, secondNumber) {
   return firstNumber / secondNumber;
 }
 
+function modulo(firstNumber, secondNumber) {
+  return firstNumber % secondNumber;
+}
+
 function operate() {
   let number1 = parseFloat(firstOperand);
   let number2 = parseFloat(secondOperand);
@@ -37,6 +41,9 @@ function operate() {
       break;
     case "/":
       currentValue = divide(number1, number2);
+      break;
+    case "%":
+      currentValue = modulo(number1, number2);
       break;
   }
 }
