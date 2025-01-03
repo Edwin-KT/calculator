@@ -127,5 +127,6 @@ operatorButtons.forEach((element) => {
   element.addEventListener("click", () => {
     updateOperands();
     operator = element.textContent;
+    calculatorDisplay.textContent = operator;
   });
 });
